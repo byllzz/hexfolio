@@ -25,8 +25,6 @@ Built for archival precision, monumental typography, and minimalist immersion �
 
 ⭐ Star the repo if you appreciate the aesthetic — it really helps!
 
-## ✨ Features
-
 <!-- <p align="left">
 ✔️ 162 Individual Pigments (Traditional Japanese palette) <br>
 ✔️ Historical Color Plates (2, 3, and 4-color harmonies)<br>
