@@ -1,4 +1,4 @@
-# <a href="https://wadaindex.vercel.app" target="_blank">WadaIndex — A Digital Dictionary of Color Combinations</a> 
+# <a href="https://wadaindex.vercel.app" target="_blank">WadaIndex — A Digital Dictionary of Color Combinations</a>
 WadaIndex is a high-fidelity digital archive of Wada Sanzō’s seminal 6-volume color study from the 1930s. Explore a curated collection of 162 traditional Japanese pigments, discover historical multi-color harmonies (Plates), and experience the intersection of early 20th-century color theory and modern web design.
 
 Built for archival precision, monumental typography, and minimalist immersion — bringing a masterpiece of color history to the browser.
@@ -27,7 +27,7 @@ Built for archival precision, monumental typography, and minimalist immersion �
 
 ## ✨ Features
 
-<p align="left">
+<!-- <p align="left">
 ✔️ 162 Individual Pigments (Traditional Japanese palette) <br>
 ✔️ Historical Color Plates (2, 3, and 4-color harmonies)<br>
 ✔️ Monumental Typography (Fluid Playfair Display scaling)<br>
@@ -41,7 +41,26 @@ Built for archival precision, monumental typography, and minimalist immersion �
 ✔️ Fully Client-Side (Fast, snappy navigation via React Router)<br>
 ✔️ Dark Mode Optimized (Japandi-inspired aesthetic)<br>
 ✔️ Deployed on Vercel (High-performance global delivery)<br>
-</p>
+</p> -->
+
+##  Key Features
+
+| Category | Highlights |
+| :--- | :--- |
+| **Archival** | 162 Traditional Pigments • 2, 3, & 4-Color Plates • Proportional Weight Bars |
+| **Engineering** | Real-time Hex Search • Auto RGB/CMYK Conversion • React Router Navigation |
+| **Design** | Fluid Playfair Typography • Mix-Blend-Mode Readability • Japandi Aesthetic |
+| **UX/DX** | Full-screen Color Immersion • Custom Ghost Scrollbar • Vercel Deployment |
+
+---
+
+###  Feature Breakdown
+
+* **162 Individual Pigments**: A digital tribute to the traditional Japanese palette.
+* **Historical Color Plates**: Authentic color harmonies mapped from the 1930s originals.
+* **Context-Aware UI**: Uses `mix-blend-mode` to ensure navigation is visible against any pigment intensity.
+* **Responsive Grid**: A fluid, editorial layout optimized for mobile and desktop viewing.
+
 
 ## How It Works
 
@@ -95,4 +114,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-*Inspired by "A Dictionary of Color Combinations" by Wada Sanzō.*
+# <p align="center">*Inspired by "A Dictionary of Color Combinations" by Wada Sanzō.*</p>
