@@ -2,14 +2,9 @@ import React from 'react';
 import { Search } from 'lucide-react';
 
 export default function FilterPanel({ setsearchQuery }) {
-
-
-  // const [inputVal, setInputVal] = useState('Type to find a mood...');
-
-  // console.log(inputVal);
   return (
     <div className="w-full bg-black pt-20 pb-10 px-6 md:px-16 border-b border-zinc-900/50">
-      {/* 1. The Big Typography Header */}
+      {/*  Big Typography Header */}
       <div className="flex flex-col mb-12">
         <span className="text-zinc-600 font-mono text-[10px] tracking-[0.5em] uppercase mb-4">
           Wada Sanzō Archive — 1933
@@ -19,10 +14,10 @@ export default function FilterPanel({ setsearchQuery }) {
         </h1>
       </div>
 
-      {/* 2. Interactive Row */}
+      {/*  Interactive Row */}
       <div className="flex flex-col md:flex-row items-end justify-between gap-8">
 
-        {/* Right: Architectural Search */}
+        {/* l Search */}
         <div className="relative w-full md:w-180 group border-b border-zinc-800 focus-within:border-white transition-all duration-700">
           <input
             type="text"

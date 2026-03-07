@@ -17,7 +17,7 @@ export default function SingleColorCard({ item }) {
   }
   return (
     <div className="group relative bg-[#0a0a0a] border border-zinc-900 rounded-sm overflow-hidden hover:border-zinc-700 transition-all duration-500">
-      {/* 1. Large Color Field */}
+      {/*  Large Color Field */}
       <div
         className="aspect-[5/7] w-full relative overflow-hidden cursor-pointer"
         style={{ backgroundColor: item.hex }}
@@ -34,7 +34,7 @@ export default function SingleColorCard({ item }) {
         </div>
       </div>
 
-      {/* 2. Metadata Section */}
+      {/* Metadata Section */}
       <div className="p-5 space-y-4">
         <div className="flex relative justify-between items-start">
           <div>
@@ -57,7 +57,7 @@ export default function SingleColorCard({ item }) {
         </p>
       </div>
 
-      {/* 3. Decorative Bottom Bar */}
+      {/* Decorative Bottom Bar */}
       <div
         className="h-1 w-0 group-hover:w-full transition-all duration-700 ease-in-out"
         style={{ backgroundColor: item.hex }}

@@ -1,17 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- play fair -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <title>wada-archive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Wada Sanzō Archive — A Dictionary of Color Combinations</title>
+    <meta name="title" content="Wada Sanzō Archive — A Dictionary of Color Combinations" />
+    <meta name="description" content="An interactive digital archive of Wada Sanzō's seminal 1930s color studies. Explore traditional Japanese pigments and historical color harmonies." />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wadaindex.vercel.app/" />
+    <meta property="og:title" content="Wada Sanzō Archive — Color Combinations" />
+    <meta property="og:description" content="Explore the historical color palettes of 1930s Japan in a high-end digital format." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Wada Sanzō Archive" />
+    <meta property="twitter:description" content="A digital tribute to traditional Japanese color theory." />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/src/assets/favicon/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    >
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   </head>
-  <body>
+  <body class="bg-black antialiased selection:bg-white selection:text-black">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <div id="announcer" aria-live="polite" class="sr-only"></div>
   </body>
 </html>

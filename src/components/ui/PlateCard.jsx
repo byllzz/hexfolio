@@ -11,14 +11,14 @@ export default function PlateCard({ plate }) {
   return (
     <div className="group relative bg-[#0f0f0f] border border-zinc-900 p-4 rounded-sm hover:border-zinc-700 transition-all duration-500">
 
-      {/* 1. The Color "Chord" Display */}
+      {/*  The Color "Chord" Display */}
       <div className="flex h-64 w-full overflow-hidden rounded-sm cursor-pointer shadow-2xl" onClick={handleNavigate}>
         {plate.colors.map((color, index) => (
           <div
             key={index}
             style={{
               backgroundColor: color,
-              flex: plate.weights[index] // Uses the weight (e.g., 2:1:1) from JSON
+              flex: plate.weights[index] // Uses the weight (e.g., 2:1:1) from JSON data,
             }}
             className="h-full transition-transform duration-700 hover:scale-[1.05] relative group/color"
           >
@@ -30,7 +30,7 @@ export default function PlateCard({ plate }) {
         ))}
       </div>
 
-      {/* 2. Card Details */}
+      {/*Card Details */}
       <div className="mt-6 flex justify-between items-start">
         <div className="space-y-1">
           <div className="flex items-center gap-2">
@@ -56,7 +56,7 @@ export default function PlateCard({ plate }) {
         </div>
       </div>
 
-      {/* 3. "Red Seal" Hover Element */}
+      {/*  "Red Seal" Hover Element */}
       <div className="absolute top-0 right-0 w-0 h-0 border-t-[30px] border-t-transparent border-r-[30px] border-r-transparent group-hover:border-r-[#b91c1c] transition-all duration-500 opacity-20"></div>
     </div>
   );
