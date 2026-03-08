@@ -20,7 +20,7 @@ export default function Footer() {
           WadaIndex
         </h1>
       </div>
-      <div className="w-full max-w-[1560px] mx-auto grid grid-cols-2 md:grid-cols-1 gap-8">
+      <div className="w-full max-w-[1560px] mx-auto grid grid-cols-2 md:grid-cols-2 gap-8">
         {/* col -1*/}
         <div className="space-y-4">
           <h2 className="font-fair text-4xl font-bold text-zinc-100 tracking-tight">Wada Index</h2>
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         {/* col -2 */}
-        <div className="flex justify-end gap-20 md:grid grid-cols-1">
+        <div className="md:grid grid-cols-2">
           {/* links */}
           <div className="flex flex-col space-y-3">
             <h3 className="text-zinc-300/90 text-xl uppercase tracking-[0.1em] font-fair mb-2 font-semibold">
