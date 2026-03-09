@@ -19,7 +19,7 @@ Built for archival precision, monumental typography, and minimalist immersion â€
 <br />
 
 
-[![Visit Iro-Kumi](https://img.shields.io/badge/View-iro-kumi-9B72FF?style=flat)](https://wadaindex.vercel.app)
+[![Visit Iro-Kumi](https://img.shields.io/badge/View-Iro--Kumi-9B72FF?style=flat)](https://iro-kumi.vercel.app)
 
 <img width="100%" alt="Iro-Kumi Preview" src="/public/preview.png" />
 
