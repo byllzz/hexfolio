@@ -1,11 +1,15 @@
-export default function Hero({ platesLenght, singleColorsLength }) {
+import BackgroundCanvas from './BackgroundCanvas';
 
+
+export default function Hero({ platesLenght, singleColorsLength }) {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-24 overflow-hidden">
+    <section className="relative pt-40 bg-transparent text-white min-h-screen flex flex-col justify-center px-6 md:px-24 overflow-hidden">
+            {/* The Canvas Component */}
+            <BackgroundCanvas />
       {/*large outlined background  */}
-      <div className="absolute top-10 left-0 w-full select-none pointer-events-none z-0">
+      <div className="absolute top-30 left-0 w-full select-none pointer-events-none z-0">
         <h1
-          className="text-[22vw] font-bold leading-none uppercase tracking-tighter opacity-10"
+          className="text-[20vw] font-bold leading-none uppercase tracking-tighter opacity-10"
           style={{
             color: 'transparent',
             WebkitTextStroke: '1px #ffffff',
@@ -18,11 +22,11 @@ export default function Hero({ platesLenght, singleColorsLength }) {
       {/*  vertical tategaki text  */}
       <div className="absolute top-1/2 right-10 -translate-y-1/2 select-none pointer-events-none z-0 hidden lg:block">
         <p
-          className="text-[8vw] font-bold opacity-5"
+          className="text-[8vw] font-bold opacity-100"
           style={{
             writingMode: 'vertical-rl',
             color: 'transparent',
-            WebkitTextStroke: '1px #ffffff',
+            WebkitTextStroke: '2px #ffffff',
           }}
         >
           配色総鑑
@@ -32,7 +36,7 @@ export default function Hero({ platesLenght, singleColorsLength }) {
       <div className="relative z-10 max-w-7xl w-full">
         {/*  the red seal */}
         <div className="inline-block bg-[#b91c1c] text-white text-[10px] px-3 py-1 mb-8 tracking-[0.4em] font-bold uppercase">
-          Showa Era Masterpiece
+          Show Era Masterpiece
         </div>
 
         {/* main title section */}
@@ -56,11 +60,11 @@ export default function Hero({ platesLenght, singleColorsLength }) {
               className="text-5xl md:text-7xl font-fair text-white transition-transform duration-500 group-hover:-translate-y-2"
               id="totalColors"
             >
-             {singleColorsLength}
+              {singleColorsLength}
             </h2>
             <div className="flex items-center gap-3 mt-2">
               <div className="w-8 h-[1px] bg-[#b91c1c]"></div>
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-zinc-600">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white">
                 Individual Hues
               </span>
             </div>
@@ -71,8 +75,8 @@ export default function Hero({ platesLenght, singleColorsLength }) {
               {platesLenght}
             </h2>
             <div className="flex items-center gap-3 mt-2">
-              <div className="w-8 h-[1px] bg-zinc-800"></div>
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-zinc-600">
+              <div className="w-8 h-[1px] bg-black"></div>
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white">
                 Chord Plates
               </span>
             </div>
@@ -80,8 +84,8 @@ export default function Hero({ platesLenght, singleColorsLength }) {
         </div>
 
         {/* japanese title */}
-        <div className="mt-24 ml-8 md:ml-12 opacity-20">
-          <p className="font-fair text-sm tracking-[1em] uppercase text-zinc-500">
+        <div className="mt-24 ml-8 md:ml-12 opacity-100">
+          <p className="font-fair text-sm tracking-[1em] uppercase text-white">
             Wada Sanzō — Haishoku Sōkan
           </p>
         </div>

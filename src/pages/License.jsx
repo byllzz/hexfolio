@@ -3,7 +3,7 @@ import { FaArrowLeft } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 export default function License() {
   return (
-    <section className="min-h-screen bg-black text-white pt-32 pb-20 px-6 md:px-16 relative overflow-hidden mt-10">
+    <section className="min-h-screen bg-white text-black pt-32 pb-20 px-6 md:px-16 relative overflow-hidden pt-10">
       {/* Background Watermark  */}
       <div className="absolute top-10 left-0 w-full select-none pointer-events-none z-0">
         <h1
@@ -29,10 +29,10 @@ export default function License() {
         <div className="space-y-12">
           {/* sec -1 */}
           <section className="space-y-4">
-            <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-zinc-200">
+            <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-black">
               01. Software License
             </h2>
-            <div className="bg-zinc-900/30 border border-zinc-800 p-8 rounded-2xl">
+            <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl">
               <p className="text-zinc-400 leading-relaxed italic mb-6">The MIT License (MIT)</p>
               <p className="text-zinc-300 leading-relaxed text-sm">
                 Copyright © 2026 (Bilal Malik). Permission is hereby granted, free of charge, to any
@@ -47,7 +47,7 @@ export default function License() {
           {/* sec -2 */}
           <section className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="space-y-4">
-              <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-zinc-200">
+              <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-black">
                 02. The Wada Legacy
               </h2>
               <p className="text-zinc-500 text-sm leading-relaxed">
@@ -59,7 +59,7 @@ export default function License() {
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-zinc-200">
+              <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-black">
                 03. Usage Policy
               </h2>
               <p className="text-zinc-500 text-sm leading-relaxed">
@@ -74,7 +74,7 @@ export default function License() {
           <section className="pt-10 border-t border-zinc-900">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="max-w-md">
-                <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-zinc-200 mb-2">
+                <h2 className="text-xs uppercase tracking-[0.3em] font-bold text-black mb-2">
                   Disclaimer
                 </h2>
                 <p className="text-zinc-600 text-[12px] leading-relaxed">

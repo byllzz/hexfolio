@@ -27,32 +27,33 @@ export default function Home() {
 
   return (
     <div className="w-full flex flex-col overflow-x-hidden relative min-h-screen bg-black">
-      <div className="mt-45">
+      <div>
         <Hero platesLenght={platesColorsData.length} singleColorsLength={singalColorData.length} />
       </div>
 
-      <div className="px-6 md:px-16">
+      <div className="bg-black px-6 md:px-16">
         <FIlterPanel setsearchQuery={setsearchQuery} />
 
         <div className="flex flex-row items-center justify-center w-full max-w-400 mx-auto gap-20 my-32">
-       (   <button
-            className={`text-3xl italic font-serif transition-all duration-500 ${activeView === 'colors' ? 'text-white' : 'text-zinc-800'}`}
+          ({' '}
+          <button
+            className={`text-3xl italic font-serif transition-all duration-200 ${activeView === 'colors' ? 'text-white' : 'text-zinc-400'}`}
             onClick={() => setActiveView('colors')}
           >
             Individual Colors
           </button>
           <button
             onClick={() => setActiveView('plates')}
-            className={`text-3xl italic font-serif transition-all duration-500 ${activeView === 'plates' ? 'text-white' : 'text-zinc-800'}`}
+            className={`text-3xl italic font-serif transition-all duration-200 ${activeView === 'plates' ? 'text-white' : 'text-zinc-400'}`}
           >
             Color Plates
-          </button> )
+          </button>{' '}
+          )
         </div>
 
         {/* View Logic */}
         {activeView === 'colors' ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 min-h-[40vh]">
-
             {filteredColors.length > 0 ? (
               filteredColors.map(item => <SingleColorCard key={item.id} item={item} />)
             ) : (
@@ -63,7 +64,6 @@ export default function Home() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 min-h-[40vh]">
-
             {filteredPlates.length > 0 ? (
               filteredPlates.map((plate, index) => <PlateCard key={index} plate={plate} />)
             ) : (
@@ -75,6 +75,11 @@ export default function Home() {
         )}
       </div>
 
+      <div className="flex items-center justify-center  my-20 bg-black text-white">
+        <h1 className="underline text-4xl md:text-6xl font-serif text-white tracking-tighter leading-none italic select-none">
+          More {activeView === 'colors' ? "Colors" : "Plates"} Soon!
+        </h1>
+      </div>
       <Faqs />
     </div>
   );

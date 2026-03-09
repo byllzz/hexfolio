@@ -23,16 +23,16 @@ export default function Faqs() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
-    <section className="relative text-zinc-300 pt-32 pb-40 px-6 md:px-24 overflow-hidden mt-20">
+    <section className="relative text-white bg-black pt-32 pb-40 px-6 md:px-24 overflow-hidden ">
 
       {/* vertical watermark*/}
       <div className="absolute top-20 right-10 select-none pointer-events-none z-0 hidden lg:block">
         <h1
-          className="text-[12vw] font-bold leading-none uppercase opacity-5"
+          className="text-[12vw] font-bold leading-none uppercase opacity-100"
           style={{
             writingMode: 'vertical-rl',
             color: 'transparent',
-            WebkitTextStroke: '1px #ffffff',
+            WebkitTextStroke: '2px #ffffff',
           }}
         >
           質問
@@ -49,7 +49,7 @@ export default function Faqs() {
           <h1 className="font-fair text-7xl md:text-9xl text-white tracking-tighter leading-none mb-4">
             Common <br /> Queries
           </h1>
-          <p className="text-zinc-600 font-serif italic text-2xl">Guided Archive Access</p>
+          <p className="text-white font-serif italic text-2xl">Guided Archive Access</p>
         </div>
 
         {/*  faq accordion grid */}
@@ -58,8 +58,8 @@ export default function Faqs() {
           {/*  Side Column */}
           <div className="hidden lg:block lg:col-span-3">
              <div className="sticky top-40 space-y-4">
-                <span className="text-[10px] text-zinc-600 tracking-[0.5em] block uppercase">Navigation</span>
-                <p className="font-fair italic text-zinc-400 text-lg">Seeking harmony through understanding.</p>
+                <span className="text-[10px] text-white tracking-[0.5em] block uppercase">Navigation</span>
+                <p className="font-fair italic text-white text-lg">Seeking harmony through understanding.</p>
                 <div className="w-12 h-[1px] bg-zinc-800 mt-8"></div>
              </div>
           </div>
@@ -75,18 +75,18 @@ export default function Faqs() {
                   onClick={() => setActiveIndex(activeIndex === index ? null : index)}
                   className="w-full py-10 flex items-start text-left"
                 >
-                  <span className="font-mono text-[10px] text-zinc-700 mt-2 mr-8">
+                  <span className="font-mono text-[10px] text-white mt-2 mr-8">
                     0{index + 1}
                   </span>
                   <div className="flex-1">
-                    <h3 className={`font-fair text-2xl md:text-3xl transition-colors duration-300 ${activeIndex === index ? 'text-white' : 'text-zinc-500 group-hover:text-zinc-300'}`}>
+                    <h3 className={`font-fair text-2xl md:text-3xl transition-colors duration-200 ${activeIndex === index ? 'text-white' : 'text-zinc-200 group-hover:text-zinc-300'}`}>
                       {item.question}
                     </h3>
 
                     <div
-                      className={`overflow-hidden transition-all duration-700 ease-in-out ${activeIndex === index ? 'max-h-96 mt-6 opacity-100' : 'max-h-0 opacity-0'}`}
+                      className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? 'max-h-96 mt-6 opacity-100' : 'max-h-0 opacity-0'}`}
                     >
-                      <p className="text-zinc-500 leading-relaxed font-light text-lg max-w-2xl">
+                      <p className="text-zinc-200 leading-relaxed font-light text-lg max-w-2xl">
                         {item.answer}
                       </p>
                     </div>
@@ -94,8 +94,8 @@ export default function Faqs() {
 
                   {/*  toggle */}
                   <div className="ml-4 flex flex-col items-center">
-                    <div className={`w-[1px] h-6 bg-zinc-800 transition-transform duration-500 ${activeIndex === index ? 'rotate-90' : 'rotate-0'}`}></div>
-                    <div className="w-6 h-[1px] bg-zinc-800 -mt-3"></div>
+                    <div className={`w-[2px] h-6 bg-zinc-600 transition-transform duration-300 ${activeIndex === index ? 'rotate-90' : 'rotate-0'}`}></div>
+                    <div className="w-6 h-[2px] bg-zinc-800 -mt-3"></div>
                   </div>
                 </button>
               </div>

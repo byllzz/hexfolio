@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import License from './pages/License';
@@ -11,27 +11,11 @@ import Faqs from './components/layout/Faqs';
 import PlateDetails from './pages/PlateDetails'
 
 export default function App() {
-  const [navStyle, setNavStyle] = useState('fixed top-0 w-full z-99');
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setNavStyle('fixed top-0 w-full z-99 backdrop-blur-2xl');
-      } else {
-        setNavStyle('fixed top-0 w-full z-99');
-      }
-    };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
   return (
     <BrowserRouter>
+      <Navbar />
       <div>
-        <div className={navStyle}>
-          <Navbar />
-        </div>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
@@ -41,8 +25,8 @@ export default function App() {
           <Route path="/colorNotFound" element={<ColorNotFound />}></Route>
           <Route path="/plateDetails" element={<PlateDetails />}></Route>
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }

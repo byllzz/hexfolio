@@ -19,13 +19,8 @@ export default function ColorDetails() {
   if (!item) return <ColorNotFound />;
 
   return (
-    <div className="min-h-screen bg-black text-zinc-100 selection:bg-white selection:text-black">
-      {/* Hero Section */}
-      <div
-        className="w-full h-[60vh] relative flex flex-col justify-between p-8 md:p-16 transition-colors duration-1000 mt-20"
-        style={{ backgroundColor: item.hex }}
-      >
-        <div className="flex justify-between items-start">
+    <div className="min-h-screen bg-white text-black selection:bg-white selection:text-black pt-40">
+      <div className="absolute top-30 flex justify-between items-start w-full items-center justify-between px-10">
           <button
             onClick={() => navigate(-1)}
             className="text-white mix-blend-difference font-mono text-[10px] tracking-[0.4em] uppercase flex items-center gap-2 group"
@@ -37,9 +32,15 @@ export default function ColorDetails() {
             Dictionary
           </span>
         </div>
+      {/* Hero Section */}
+      <div
+        className="w-full h-[60vh] relative flex flex-col justify-between p-8 md:p-16 transition-colors duration-1000 "
+        style={{ backgroundColor: item.hex }}
+      >
+
 
         <div className="flex justify-between items-end">
-          <h1 className="text-7xl md:text-[12vw] font-serif leading-none tracking-tighter text-white mix-blend-difference">
+          <h1 className="text-7xl md:text-[12vw] font-serif leading-none tracking-tighter text-black mix-blend-difference">
             {item.name}
           </h1>
           <span className="font-mono text-sm mb-4 opacity-70 mix-blend-difference">{item.hex}</span>
@@ -71,7 +72,7 @@ export default function ColorDetails() {
         <h2 className="font-mono text-[10px] text-zinc-600 uppercase tracking-[0.5em] mb-10">
           Historical Context
         </h2>
-        <p className="text-4xl md:text-5xl font-serif leading-tight text-zinc-300 italic">
+        <p className="text-4xl md:text-5xl font-serif leading-tight text-black italic">
           "{item.description}"
         </p>
 

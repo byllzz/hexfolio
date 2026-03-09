@@ -16,10 +16,10 @@ export default function SingleColorCard({ item }) {
    navigation('/ColorDetails', { state: { color: item } });
   }
   return (
-    <div className="group relative bg-[#0a0a0a] border border-zinc-900 rounded-sm overflow-hidden hover:border-zinc-700 transition-all duration-500">
+    <div className="group relative bg-black border border-zinc-900 rounded-sm overflow-hidden hover:border-zinc-700 transition-all duration-500">
       {/*  Large Color Field */}
       <div
-        className="aspect-[5/7] w-full relative overflow-hidden cursor-pointer"
+        className="aspect-4/3 md:aspect-5/7 w-full relative overflow-hidden cursor-pointer"
         style={{ backgroundColor: item.hex }}
         onClick={handleDetails}
       >
