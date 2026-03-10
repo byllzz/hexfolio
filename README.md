@@ -109,6 +109,6 @@ npm run dev
 ~~~
 
 ## License 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details. <br>
 This project is inspired from **Wada Sanzo" Book!
 
