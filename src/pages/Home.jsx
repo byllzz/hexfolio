@@ -3,7 +3,7 @@ import Faqs from '../components/layout/Faqs';
 import plateData from '../data/wadaData.json';
 import colorData from '../data/colors-data.json';
 import PlateCard from '../components/ui/PlateCard';
-import FilterPanel from '../components/ui/FilterPanel';
+import FilterPanel from '../components/ui/FIlterPanel';
 import SingleColorCard from '../components/ui/SingleColorCard';
 import { useState } from 'react';
 
