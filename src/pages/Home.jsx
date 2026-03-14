@@ -30,7 +30,6 @@ export default function Home() {
       <Hero
         platesLenght={platesColorsData.length}
         singleColorsLength={singalColorData.length}
-        setsearchQuery={setSearchQuery}
       />
 
       {/*  Filter Section */}

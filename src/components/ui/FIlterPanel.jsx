@@ -10,16 +10,16 @@ export default function FilterPanel({ setsearchQuery }) {
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="relative w-[95%] max-w-6xl mx-auto bg-[#000] rounded-[60px] md:rounded-full px-6 md:px-16 mt-20 md:mt-40 py-16 md:py-24 overflow-hidden flex flex-col items-center"
+      className="relative w-[95%] max-w-6xl mx-auto bg-[#000] rounded-xl md:rounded-full px-6 md:px-16 mt-20 md:mt-40 py-16 md:py-24 overflow-hidden flex flex-col items-center"
     >
 
 
       {/* the arched text - responsive svg curve */}
-      <div className="absolute -top-6 md:-top-10 left-1/2 -translate-x-1/2 w-[180%] md:w-[1400px] pointer-events-none select-none overflow-visible">
+      <div className="absolute -top-5 md:-top-10 left-1/2 -translate-x-1/2 w-[180%] md:w-[1400px] pointer-events-none select-none overflow-visible">
         <svg viewBox="0 0 1200 350" className="w-full h-auto overflow-visible">
           <path id="text-curve" d="M 0,300 C 300,50 900,50 1200,300" fill="transparent" />
           <text
-            className="text-[50px] md:text-[50px] font-serif tracking-[0.05em]"
+            className="text-[45px] md:text-[50px] font-serif tracking-[0.05em]"
             fill="none"
             stroke="#fff"
             strokeWidth="0.4"
