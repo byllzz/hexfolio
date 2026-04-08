@@ -25,7 +25,7 @@ export default function ContentGrid({ activeView, filteredColors, filteredPlates
 
         <div className="hidden md:block">
           <span className="font-mono text-[9px] uppercase tracking-widest text-white/20">
-            IRO-KUMI Archive / 2026
+            IROSAI Archive / 2026
           </span>
         </div>
       </div>

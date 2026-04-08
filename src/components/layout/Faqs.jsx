@@ -106,7 +106,7 @@ export default function Faqs() {
         {/* Bottom */}
         <div className="mt-40 pt-20 border-t border-zinc-900 text-center">
             <p className="text-zinc-600 text-xs uppercase tracking-[0.3em] mb-4">Still seeking answers?</p>
-            <a href="mailto:hello@irokumi.com" className="font-fair text-3xl text-white hover:text-zinc-400 transition-colors border-b border-zinc-800 pb-2">
+            <a href="mailto:hello@irosai.com" className="font-fair text-3xl text-white hover:text-zinc-400 transition-colors border-b border-zinc-800 pb-2">
               Reach the Archive
             </a>
         </div>

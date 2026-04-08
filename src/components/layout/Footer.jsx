@@ -53,7 +53,7 @@ export default function Footer() {
               Common Questions
             </Link>
             <a
-              href="https://github.com/byllzz/iro-kumi"
+              href="https://github.com/byllzz/irosai"
               target="_blank"
               rel="noreferrer"
               className="text-[#cacaca] hover:text-zinc-500 transition-colors text-sm"

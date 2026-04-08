@@ -51,7 +51,7 @@ export default function Navbar() {
                 </svg>
               </span>
               <span className="font-fair text-[18px] tracking-tighter text-black">
-                Iro<span className="italic font-bold">Kumi</span>
+                Iro<span className="italic font-bold">Sai</span>
               </span>
             </NavLink>
           </div>
@@ -64,7 +64,7 @@ export default function Navbar() {
               <NavLink to="/faqs" className={linkStyle}>FAQ</NavLink>
               <div className="h-4 w-[1px] bg-black/20 mx-1" />
               <a
-                href="https://github.com/byllzz/iro-kumi"
+                href="https://github.com/byllzz/irosai"
                 target="_blank"
                 rel="noreferrer"
                 className="text-black/70 hover:text-black transition-colors"
@@ -105,7 +105,7 @@ export default function Navbar() {
         </NavLink>
 
         <a
-          href="https://github.com/byllzz/iro-kumi"
+          href="https://github.com/byllzz/irosai"
           target="_blank"
           rel="noreferrer"
           className="mt-4 p-3 rounded-full bg-black text-white hover:scale-110 transition-transform"

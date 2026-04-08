@@ -1,6 +1,6 @@
 
 import Faqs from '../components/layout/Faqs';
-import plateData from '../data/wadaData.json';
+import plateData from '../data/plates-data.json';
 import colorData from '../data/colors-data.json';
 import SearchNavigation from '../components/layout/SearchNavigation';
 import ContentGrid from '../components/ui/ContentGrid';
